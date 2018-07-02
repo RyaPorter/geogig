@@ -39,9 +39,9 @@ import org.locationtech.geogig.model.NodeRef;
 import org.locationtech.geogig.model.ObjectId;
 import org.locationtech.geogig.model.RevObject.TYPE;
 import org.locationtech.geogig.repository.IndexInfo;
+import org.locationtech.jts.geom.Envelope;
 
 import com.google.common.collect.ImmutableMap;
-import com.vividsolutions.jts.geom.Envelope;
 
 public class ExtraDataPropertyAccessorFactoryTest {
 

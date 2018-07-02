@@ -33,12 +33,12 @@ import org.locationtech.geogig.repository.Platform;
 import org.locationtech.geogig.storage.BulkOpListener;
 import org.locationtech.geogig.storage.ObjectDatabase;
 import org.locationtech.geogig.storage.ObjectStore;
+import org.locationtech.jts.geom.Envelope;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterables;
 import com.google.common.hash.HashCode;
-import com.vividsolutions.jts.geom.Envelope;
 
 public class RevObjectTestSupport {
 

@@ -35,6 +35,7 @@ import org.locationtech.geogig.plumbing.diff.PreOrderDiffWalk.BucketIndex;
 import org.locationtech.geogig.repository.AbstractGeoGigOp;
 import org.locationtech.geogig.storage.ObjectDatabase;
 import org.locationtech.geogig.storage.ObjectStore;
+import org.locationtech.jts.geom.Envelope;
 import org.opengis.feature.type.FeatureType;
 import org.opengis.geometry.BoundingBox;
 import org.opengis.referencing.FactoryException;
@@ -46,7 +47,6 @@ import com.google.common.base.Optional;
 import com.google.common.base.Preconditions;
 import com.google.common.base.Throwables;
 import com.google.common.collect.ImmutableList;
-import com.vividsolutions.jts.geom.Envelope;
 
 /**
  * Computes the bounds of the difference between the two trees instead of the actual diffs.

@@ -22,9 +22,8 @@ import org.locationtech.geogig.model.RevTree;
 import org.locationtech.geogig.repository.AbstractGeoGigOp;
 import org.locationtech.geogig.repository.IndexInfo;
 import org.locationtech.geogig.repository.IndexInfo.IndexType;
+import org.locationtech.jts.geom.Envelope;
 import org.opengis.feature.type.GeometryDescriptor;
-
-import com.vividsolutions.jts.geom.Envelope;
 
 /**
  * Creates a {@link RevTree} that represents a quad-tree out of an existing canonical

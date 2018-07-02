@@ -80,6 +80,8 @@ import org.locationtech.geogig.repository.impl.GeoGIG;
 import org.locationtech.geogig.repository.impl.GlobalContextBuilder;
 import org.locationtech.geogig.test.TestPlatform;
 import org.locationtech.geogig.test.integration.TestContextBuilder;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.io.ParseException;
 import org.opengis.feature.Feature;
 import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.feature.type.FeatureType;
@@ -96,8 +98,6 @@ import com.google.common.collect.Iterators;
 import com.google.common.collect.Maps;
 import com.google.inject.AbstractModule;
 import com.google.inject.multibindings.Multibinder;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.io.ParseException;
 
 public abstract class RemoteRepositoryTestCase {
 

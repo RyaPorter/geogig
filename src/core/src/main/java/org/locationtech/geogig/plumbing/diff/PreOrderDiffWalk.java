@@ -48,6 +48,7 @@ import org.locationtech.geogig.model.RevObjects;
 import org.locationtech.geogig.model.RevTree;
 import org.locationtech.geogig.repository.impl.SpatialOps;
 import org.locationtech.geogig.storage.ObjectStore;
+import org.locationtech.jts.geom.Envelope;
 
 import com.google.common.base.Function;
 import com.google.common.base.Objects;
@@ -62,7 +63,6 @@ import com.google.common.collect.Multimaps;
 import com.google.common.collect.PeekingIterator;
 import com.google.common.collect.Sets;
 import com.google.common.primitives.Ints;
-import com.vividsolutions.jts.geom.Envelope;
 
 /**
  * Provides a means to "walk" the differences between two {@link RevTree trees} in in-order order

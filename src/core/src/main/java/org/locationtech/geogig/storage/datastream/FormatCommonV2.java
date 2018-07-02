@@ -58,6 +58,8 @@ import org.locationtech.geogig.model.impl.RevTagBuilder;
 import org.locationtech.geogig.model.impl.RevTreeBuilder;
 import org.locationtech.geogig.plumbing.HashObject;
 import org.locationtech.geogig.repository.DiffEntry;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Geometry;
 import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.feature.type.AttributeDescriptor;
 import org.opengis.feature.type.AttributeType;
@@ -76,8 +78,6 @@ import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableList.Builder;
 import com.google.common.collect.ImmutableSortedMap;
 import com.google.common.math.DoubleMath;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
 
 public class FormatCommonV2 {
 

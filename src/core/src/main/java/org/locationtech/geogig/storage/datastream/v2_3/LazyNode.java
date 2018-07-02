@@ -9,15 +9,16 @@
  */
 package org.locationtech.geogig.storage.datastream.v2_3;
 
+import static com.google.common.base.Preconditions.checkArgument;
+
 import java.util.Map;
 
-import static com.google.common.base.Preconditions.*;
 import org.locationtech.geogig.model.Node;
 import org.locationtech.geogig.model.ObjectId;
 import org.locationtech.geogig.model.RevObject.TYPE;
+import org.locationtech.jts.geom.Envelope;
 
 import com.google.common.base.Optional;
-import com.vividsolutions.jts.geom.Envelope;
 
 class LazyNode extends Node {
 

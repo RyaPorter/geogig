@@ -9,21 +9,16 @@
  */
 package org.locationtech.geogig.data.retrieve;
 
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.NoSuchElementException;
 
 import org.geotools.data.DataUtilities;
-import org.geotools.feature.SchemaException;
 import org.geotools.feature.simple.SimpleFeatureBuilder;
 import org.geotools.geometry.jts.WKTReader2;
 import org.junit.Test;
+import org.locationtech.jts.geom.Point;
+import org.locationtech.jts.util.Assert;
 import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.feature.simple.SimpleFeatureType;
-
-import com.vividsolutions.jts.geom.Point;
-import com.vividsolutions.jts.io.ParseException;
-import com.vividsolutions.jts.util.Assert;
 
 public class IteratorBackedFeatureReaderTest {
 

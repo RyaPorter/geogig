@@ -12,10 +12,10 @@ package org.locationtech.geogig.model;
 import static com.google.common.base.Optional.fromNullable;
 
 import org.eclipse.jdt.annotation.Nullable;
+import org.locationtech.jts.geom.Envelope;
 
 import com.google.common.base.Optional;
 import com.google.common.base.Preconditions;
-import com.vividsolutions.jts.geom.Envelope;
 
 /**
  * A Bucket is merely a bounded pointer to another tree in a {@link RevTree} data structure.

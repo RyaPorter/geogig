@@ -16,9 +16,9 @@ import static com.google.common.base.Preconditions.checkState;
 import org.locationtech.geogig.model.Node;
 import org.locationtech.geogig.model.RevTree;
 import org.locationtech.geogig.storage.ObjectStore;
+import org.locationtech.jts.geom.Envelope;
 
 import com.google.common.annotations.VisibleForTesting;
-import com.vividsolutions.jts.geom.Envelope;
 
 public abstract class ClusteringStrategyBuilder {
 

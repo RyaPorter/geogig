@@ -26,14 +26,14 @@ import org.locationtech.geogig.model.RevCommit;
 import org.locationtech.geogig.model.RevFeature;
 import org.locationtech.geogig.model.RevFeatureType;
 import org.locationtech.geogig.model.RevObject.TYPE;
+import org.locationtech.geogig.model.RevObjects;
+import org.locationtech.geogig.model.RevTree;
+import org.locationtech.geogig.model.SymRef;
 import org.locationtech.geogig.model.impl.CanonicalTreeBuilder;
 import org.locationtech.geogig.model.impl.CommitBuilder;
 import org.locationtech.geogig.model.impl.RevFeatureBuilder;
 import org.locationtech.geogig.model.impl.RevFeatureTypeBuilder;
 import org.locationtech.geogig.model.impl.RevTreeBuilder;
-import org.locationtech.geogig.model.RevObjects;
-import org.locationtech.geogig.model.RevTree;
-import org.locationtech.geogig.model.SymRef;
 import org.locationtech.geogig.plumbing.LsTreeOp.Strategy;
 import org.locationtech.geogig.plumbing.diff.MutableTree;
 import org.locationtech.geogig.repository.impl.GeoGIG;
@@ -41,6 +41,7 @@ import org.locationtech.geogig.repository.impl.SpatialOps;
 import org.locationtech.geogig.storage.ObjectDatabase;
 import org.locationtech.geogig.storage.ObjectStore;
 import org.locationtech.geogig.test.integration.RepositoryTestCase;
+import org.locationtech.jts.geom.Envelope;
 import org.opengis.feature.Feature;
 
 import com.google.common.base.Preconditions;
@@ -53,7 +54,6 @@ import com.google.common.collect.Iterables;
 import com.google.common.collect.MapDifference;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
-import com.vividsolutions.jts.geom.Envelope;
 
 public class WriteTree2Test extends RepositoryTestCase {
 

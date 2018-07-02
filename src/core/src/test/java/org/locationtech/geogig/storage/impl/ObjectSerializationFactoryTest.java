@@ -58,6 +58,10 @@ import org.locationtech.geogig.model.impl.RevFeatureBuilder;
 import org.locationtech.geogig.model.impl.RevFeatureTypeBuilder;
 import org.locationtech.geogig.model.impl.RevObjectTestSupport;
 import org.locationtech.geogig.model.impl.RevTreeBuilder;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.Polygon;
+import org.locationtech.jts.io.ParseException;
 import org.opengis.feature.Feature;
 import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.feature.type.FeatureType;
@@ -69,10 +73,6 @@ import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableSortedMap;
 import com.google.common.collect.Lists;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.Polygon;
-import com.vividsolutions.jts.io.ParseException;
 
 public abstract class ObjectSerializationFactoryTest {
 

@@ -32,14 +32,14 @@ import org.locationtech.geogig.repository.IndexInfo;
 import org.locationtech.geogig.storage.datastream.LZ4SerializationFactory;
 import org.locationtech.geogig.storage.datastream.v2_3.DataStreamSerializationFactoryV2_3;
 import org.locationtech.geogig.storage.impl.ObjectSerializingFactory;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.io.WKTReader;
 
 import com.google.common.base.Stopwatch;
 import com.google.common.base.Throwables;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.io.WKTReader;
 
 public class ObjectCacheStressTest {
 

@@ -72,6 +72,7 @@ import org.locationtech.geogig.repository.RepositoryResolver;
 import org.locationtech.geogig.repository.WorkingTree;
 import org.locationtech.geogig.repository.impl.GeoGIG;
 import org.locationtech.geogig.repository.impl.SpatialOps;
+import org.locationtech.jts.geom.Envelope;
 import org.opengis.feature.Feature;
 import org.opengis.feature.type.PropertyDescriptor;
 import org.slf4j.Logger;
@@ -84,7 +85,6 @@ import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Maps;
 import com.google.common.collect.SetMultimap;
 import com.google.common.io.Files;
-import com.vividsolutions.jts.geom.Envelope;
 
 import cucumber.api.DataTable;
 import cucumber.api.Scenario;

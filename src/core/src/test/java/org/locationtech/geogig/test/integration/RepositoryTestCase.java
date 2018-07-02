@@ -58,6 +58,8 @@ import org.locationtech.geogig.repository.impl.FeatureToDelete;
 import org.locationtech.geogig.repository.impl.GeoGIG;
 import org.locationtech.geogig.repository.impl.GeogigTransaction;
 import org.locationtech.geogig.test.TestPlatform;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.io.ParseException;
 import org.opengis.feature.Feature;
 import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.feature.simple.SimpleFeatureType;
@@ -73,8 +75,6 @@ import com.google.common.base.Throwables;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Iterators;
 import com.google.common.collect.Lists;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.io.ParseException;
 
 public abstract class RepositoryTestCase extends Assert {
 

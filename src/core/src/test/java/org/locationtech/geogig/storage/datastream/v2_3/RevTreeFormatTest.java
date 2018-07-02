@@ -35,9 +35,9 @@ import org.locationtech.geogig.model.impl.RevObjectTestSupport;
 import org.locationtech.geogig.plumbing.HashObject;
 import org.locationtech.geogig.storage.ObjectStore;
 import org.locationtech.geogig.storage.memory.HeapObjectStore;
+import org.locationtech.jts.geom.Envelope;
 
 import com.google.common.collect.ImmutableList;
-import com.vividsolutions.jts.geom.Envelope;
 
 public class RevTreeFormatTest {
 

@@ -45,13 +45,13 @@ import org.locationtech.geogig.repository.StagingArea;
 import org.locationtech.geogig.storage.AutoCloseableIterator;
 import org.locationtech.geogig.storage.ConflictsDatabase;
 import org.locationtech.geogig.storage.impl.PersistedIterable;
+import org.locationtech.jts.geom.Envelope;
 
 import com.google.common.base.Optional;
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 import com.google.inject.Inject;
-import com.vividsolutions.jts.geom.Envelope;
 
 /**
  * Default implementation of {@link StagingArea}

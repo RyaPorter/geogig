@@ -10,14 +10,14 @@
 package org.locationtech.geogig.storage.datastream;
 
 
-import com.vividsolutions.jts.geom.Coordinate;
-import org.junit.Test;
-import org.locationtech.geogig.storage.datastream.v2_3.FloatPackedCoordinateSequence;
+import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+import org.locationtech.geogig.storage.datastream.v2_3.FloatPackedCoordinateSequence;
+import org.locationtech.jts.geom.Coordinate;
 
 public class FloatPackedCoordinateSequenceTest {
 

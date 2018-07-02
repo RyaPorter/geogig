@@ -45,6 +45,8 @@ import org.locationtech.geogig.repository.Context;
 import org.locationtech.geogig.repository.DiffEntry;
 import org.locationtech.geogig.storage.AutoCloseableIterator;
 import org.locationtech.geogig.test.integration.RepositoryTestCase;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryFactory;
 import org.mockito.Mockito;
 import org.opengis.feature.Feature;
 import org.opengis.feature.simple.SimpleFeature;
@@ -64,8 +66,6 @@ import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Iterators;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryFactory;
 
 public class FeatureReaderBuilderTest extends RepositoryTestCase {
 

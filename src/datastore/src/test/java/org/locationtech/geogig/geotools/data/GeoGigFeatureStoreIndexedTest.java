@@ -42,6 +42,8 @@ import org.locationtech.geogig.repository.Repository;
 import org.locationtech.geogig.repository.WorkingTree;
 import org.locationtech.geogig.repository.impl.SpatialOps;
 import org.locationtech.geogig.storage.ObjectStore;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Geometry;
 import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.filter.Filter;
@@ -49,8 +51,6 @@ import org.opengis.filter.Filter;
 import com.google.common.base.Optional;
 import com.google.common.base.Throwables;
 import com.google.common.collect.Maps;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
 
 /**
  * Run all {@link GeoGigFeatureStoreTest} test cases and make sure the {@link IndexInfo index} is

@@ -54,6 +54,8 @@ import org.locationtech.geogig.model.impl.RevTreeBuilder;
 import org.locationtech.geogig.storage.impl.ObjectReader;
 import org.locationtech.geogig.storage.impl.ObjectSerializingFactory;
 import org.locationtech.geogig.storage.impl.ObjectWriter;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Geometry;
 import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.feature.type.AttributeDescriptor;
 import org.opengis.feature.type.AttributeType;
@@ -75,8 +77,6 @@ import com.google.common.collect.ImmutableList.Builder;
 import com.google.common.collect.ImmutableSortedMap;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
 
 /**
  * An {@link ObjectSerialisingFactory} for the {@link RevObject}s text format.

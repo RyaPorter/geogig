@@ -20,20 +20,20 @@ import org.locationtech.geogig.cli.CLICommand;
 import org.locationtech.geogig.cli.Console;
 import org.locationtech.geogig.cli.GeogigCLI;
 import org.locationtech.geogig.cli.annotation.ReadOnly;
-import org.locationtech.geogig.model.RevObject.TYPE;
 import org.locationtech.geogig.model.NodeRef;
+import org.locationtech.geogig.model.RevObject.TYPE;
 import org.locationtech.geogig.model.RevTree;
 import org.locationtech.geogig.plumbing.LsTreeOp;
 import org.locationtech.geogig.plumbing.LsTreeOp.Strategy;
 import org.locationtech.geogig.plumbing.RevObjectParse;
 import org.locationtech.geogig.repository.impl.GeoGIG;
+import org.locationtech.jts.geom.Envelope;
 
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.Parameters;
 import com.google.common.base.Function;
 import com.google.common.collect.Iterators;
 import com.google.common.collect.Lists;
-import com.vividsolutions.jts.geom.Envelope;
 
 /**
  *

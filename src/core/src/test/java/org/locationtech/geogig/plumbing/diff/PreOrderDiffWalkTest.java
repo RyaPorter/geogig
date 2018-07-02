@@ -63,11 +63,11 @@ import org.locationtech.geogig.repository.impl.SpatialOps;
 import org.locationtech.geogig.storage.ObjectDatabase;
 import org.locationtech.geogig.storage.ObjectStore;
 import org.locationtech.geogig.storage.memory.HeapObjectDatabase;
+import org.locationtech.jts.geom.Envelope;
 import org.mockito.ArgumentCaptor;
 
 import com.google.common.base.Stopwatch;
 import com.google.common.collect.Lists;
-import com.vividsolutions.jts.geom.Envelope;
 
 public class PreOrderDiffWalkTest {
 

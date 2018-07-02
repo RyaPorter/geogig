@@ -22,11 +22,11 @@ import org.locationtech.geogig.model.NodeRef;
 import org.locationtech.geogig.model.RevFeature;
 import org.locationtech.geogig.repository.IndexInfo;
 import org.locationtech.geogig.storage.ObjectDatabase;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.GeometryFactory;
 import org.opengis.filter.expression.PropertyName;
 
 import com.google.common.base.Optional;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.GeometryFactory;
 
 /**
  * A GeoTools {@link PropertyAccessorFactory} that knows how to extract feature property values out

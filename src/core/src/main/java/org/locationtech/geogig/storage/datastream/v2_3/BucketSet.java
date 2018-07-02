@@ -19,11 +19,11 @@ import java.util.SortedMap;
 
 import org.locationtech.geogig.model.Bucket;
 import org.locationtech.geogig.model.ObjectId;
+import org.locationtech.jts.geom.Envelope;
 
 import com.google.common.base.Throwables;
 import com.google.common.collect.ImmutableSortedMap;
 import com.google.common.collect.ImmutableSortedMap.Builder;
-import com.vividsolutions.jts.geom.Envelope;
 
 class BucketSet {
 

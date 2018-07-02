@@ -25,6 +25,10 @@ import java.util.UUID;
 import org.eclipse.jdt.annotation.Nullable;
 import org.geotools.referencing.CRS;
 import org.locationtech.geogig.model.RevObject.TYPE;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.CoordinateFilter;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Geometry;
 import org.opengis.feature.type.FeatureType;
 import org.opengis.feature.type.GeometryDescriptor;
 import org.opengis.feature.type.Name;
@@ -38,10 +42,6 @@ import com.google.common.hash.Funnel;
 import com.google.common.hash.Funnels;
 import com.google.common.hash.Hasher;
 import com.google.common.hash.PrimitiveSink;
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.CoordinateFilter;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
 
 /**
  * Hashes a RevObject and returns the ObjectId.

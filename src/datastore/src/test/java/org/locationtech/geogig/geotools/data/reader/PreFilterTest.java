@@ -29,6 +29,9 @@ import org.locationtech.geogig.model.NodeRef;
 import org.locationtech.geogig.model.ObjectId;
 import org.locationtech.geogig.model.RevObject.TYPE;
 import org.locationtech.geogig.repository.IndexInfo;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Polygon;
+import org.locationtech.jts.io.WKTReader;
 import org.opengis.filter.BinaryComparisonOperator;
 import org.opengis.filter.Filter;
 import org.opengis.filter.FilterFactory2;
@@ -56,9 +59,6 @@ import org.opengis.filter.temporal.AnyInteracts;
 
 import com.google.common.base.Predicate;
 import com.google.common.collect.ImmutableMap;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Polygon;
-import com.vividsolutions.jts.io.WKTReader;
 
 public class PreFilterTest {
 

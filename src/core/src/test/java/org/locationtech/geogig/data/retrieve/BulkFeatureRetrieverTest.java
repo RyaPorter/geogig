@@ -32,12 +32,12 @@ import org.locationtech.geogig.model.impl.RevObjectTestSupport;
 import org.locationtech.geogig.storage.AutoCloseableIterator;
 import org.locationtech.geogig.storage.ObjectDatabase;
 import org.locationtech.geogig.storage.ObjectInfo;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.util.Assert;
 import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.feature.simple.SimpleFeatureType;
 
 import com.google.common.collect.Lists;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.util.Assert;
 
 public class BulkFeatureRetrieverTest {
 

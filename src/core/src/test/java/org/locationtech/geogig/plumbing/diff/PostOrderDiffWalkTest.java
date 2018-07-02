@@ -34,15 +34,14 @@ import org.locationtech.geogig.model.NodeRef;
 import org.locationtech.geogig.model.ObjectId;
 import org.locationtech.geogig.model.RevObject;
 import org.locationtech.geogig.model.RevObject.TYPE;
-import org.locationtech.geogig.model.impl.RevObjectTestSupport;
 import org.locationtech.geogig.model.RevTree;
+import org.locationtech.geogig.model.impl.RevObjectTestSupport;
 import org.locationtech.geogig.plumbing.diff.PostOrderDiffWalk.Consumer;
 import org.locationtech.geogig.plumbing.diff.PreOrderDiffWalk.BucketIndex;
 import org.locationtech.geogig.repository.impl.SpatialOps;
 import org.locationtech.geogig.storage.ObjectDatabase;
 import org.locationtech.geogig.storage.memory.HeapObjectDatabase;
-
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 public class PostOrderDiffWalkTest {
 

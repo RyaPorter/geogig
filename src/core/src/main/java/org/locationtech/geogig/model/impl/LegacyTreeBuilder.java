@@ -37,6 +37,7 @@ import org.locationtech.geogig.plumbing.HashObject;
 import org.locationtech.geogig.repository.impl.DepthSearch;
 import org.locationtech.geogig.repository.impl.SpatialOps;
 import org.locationtech.geogig.storage.ObjectStore;
+import org.locationtech.jts.geom.Envelope;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -52,7 +53,6 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.Sets;
-import com.vividsolutions.jts.geom.Envelope;
 
 /**
  * 

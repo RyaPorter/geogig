@@ -20,11 +20,11 @@ import org.locationtech.geogig.storage.AutoCloseableIterator;
 import org.locationtech.geogig.storage.BulkOpListener;
 import org.locationtech.geogig.storage.ObjectInfo;
 import org.locationtech.geogig.storage.ObjectStore;
+import org.locationtech.jts.geom.GeometryFactory;
 import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.feature.type.Name;
 
 import com.google.common.base.Function;
-import com.vividsolutions.jts.geom.GeometryFactory;
 
 /**
  * This is the main entry class for retrieving features from GeoGIG.

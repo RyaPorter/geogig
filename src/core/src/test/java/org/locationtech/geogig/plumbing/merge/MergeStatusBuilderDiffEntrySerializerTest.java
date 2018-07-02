@@ -27,14 +27,14 @@ import org.locationtech.geogig.model.Node;
 import org.locationtech.geogig.model.NodeRef;
 import org.locationtech.geogig.model.ObjectId;
 import org.locationtech.geogig.model.RevObject.TYPE;
-import org.locationtech.geogig.model.impl.RevObjectTestSupport;
 import org.locationtech.geogig.model.RevTree;
+import org.locationtech.geogig.model.impl.RevObjectTestSupport;
 import org.locationtech.geogig.plumbing.merge.MergeStatusBuilder.DiffEntrySerializer;
 import org.locationtech.geogig.repository.DiffEntry;
 import org.locationtech.geogig.storage.impl.PersistedIterable;
+import org.locationtech.jts.geom.Envelope;
 
 import com.google.common.collect.Lists;
-import com.vividsolutions.jts.geom.Envelope;
 
 /**
  * Unit test suite for {@link MergeStatusBuilder.DiffEntrySerializer}

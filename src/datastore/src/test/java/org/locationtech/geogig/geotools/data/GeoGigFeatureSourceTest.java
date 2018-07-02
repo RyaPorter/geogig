@@ -40,6 +40,10 @@ import org.locationtech.geogig.plumbing.LsTreeOp.Strategy;
 import org.locationtech.geogig.porcelain.CommitOp;
 import org.locationtech.geogig.porcelain.index.CreateQuadTree;
 import org.locationtech.geogig.test.integration.RepositoryTestCase;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.Polygon;
+import org.locationtech.jts.geom.PrecisionModel;
 import org.opengis.feature.Feature;
 import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.feature.simple.SimpleFeatureType;
@@ -55,10 +59,6 @@ import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.Polygon;
-import com.vividsolutions.jts.geom.PrecisionModel;
 
 public class GeoGigFeatureSourceTest extends RepositoryTestCase {
 

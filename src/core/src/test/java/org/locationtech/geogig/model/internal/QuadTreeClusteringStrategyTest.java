@@ -32,13 +32,13 @@ import org.junit.Test;
 import org.locationtech.geogig.model.Node;
 import org.locationtech.geogig.model.RevTree;
 import org.locationtech.geogig.model.impl.RevObjectTestSupport;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.io.WKTReader;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.io.WKTReader;
 
 /**
  * Test suite for {@link QuadTreeClusteringStrategy} own methods

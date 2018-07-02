@@ -10,11 +10,11 @@
 package org.locationtech.geogig.storage.datastream.v2_3;
 
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.CoordinateSequence;
-import com.vividsolutions.jts.geom.impl.PackedCoordinateSequence.Float;
-
 import java.util.List;
+
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.CoordinateSequence;
+import org.locationtech.jts.geom.impl.PackedCoordinateSequence;
 
 /**
  * Seralized form is a int[][]
@@ -27,7 +27,7 @@ import java.util.List;
  *    The ordinate list is a delta list on the Int32 form of the Float ordinate.
  *    This allows for exact representation as well as good VarInt encoding.
  */
-public class FloatPackedCoordinateSequence extends Float {
+public class FloatPackedCoordinateSequence extends PackedCoordinateSequence.Float {
 
     public static final CoordinateSequence EMPTY_2D = new FloatPackedCoordinateSequence(2, 0);
 

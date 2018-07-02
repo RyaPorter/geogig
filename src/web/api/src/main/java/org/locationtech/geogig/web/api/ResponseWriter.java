@@ -70,6 +70,8 @@ import org.locationtech.geogig.web.api.commands.RemoteManagement;
 import org.locationtech.geogig.web.api.commands.Statistics;
 import org.locationtech.geogig.web.api.commands.Tag;
 import org.locationtech.geogig.web.api.commands.UpdateRef;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Geometry;
 import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.feature.type.GeometryType;
 import org.opengis.feature.type.PropertyDescriptor;
@@ -84,8 +86,6 @@ import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Iterators;
 import com.google.common.collect.Lists;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
 
 /**
  * Provides a wrapper for writing common GeoGig objects to a provided {@link XMLStreamWriter}.

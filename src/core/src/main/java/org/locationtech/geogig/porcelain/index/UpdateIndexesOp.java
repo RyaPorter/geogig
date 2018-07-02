@@ -21,12 +21,12 @@ import org.locationtech.geogig.repository.IndexInfo;
 import org.locationtech.geogig.repository.ProgressListener;
 import org.locationtech.geogig.repository.impl.SpatialOps;
 import org.locationtech.geogig.storage.IndexDatabase;
+import org.locationtech.jts.geom.Envelope;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.google.common.base.Optional;
 import com.google.common.collect.Maps;
-import com.vividsolutions.jts.geom.Envelope;
 
 /**
  * Given a {@code refSpec} that resolves to a root tree, finds out which indexes are defined for all

@@ -48,6 +48,7 @@ import org.locationtech.geogig.repository.Repository;
 import org.locationtech.geogig.repository.WorkingTree;
 import org.locationtech.geogig.repository.impl.GeoGIG;
 import org.locationtech.geogig.repository.impl.GeogigTransaction;
+import org.locationtech.jts.io.ParseException;
 import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.feature.type.FeatureType;
@@ -58,7 +59,6 @@ import org.slf4j.LoggerFactory;
 import com.google.common.base.Throwables;
 import com.google.common.collect.Iterators;
 import com.google.common.collect.Lists;
-import com.vividsolutions.jts.io.ParseException;
 
 /**
  * A helper class to set repositories to a desired state to aid in integration testing.

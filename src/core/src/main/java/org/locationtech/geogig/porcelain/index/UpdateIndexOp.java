@@ -28,12 +28,12 @@ import org.locationtech.geogig.repository.IndexInfo;
 import org.locationtech.geogig.repository.ProgressListener;
 import org.locationtech.geogig.storage.IndexDatabase;
 import org.locationtech.geogig.storage.ObjectDatabase;
+import org.locationtech.jts.geom.Envelope;
 
 import com.google.common.base.Optional;
 import com.google.common.base.Throwables;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
-import com.vividsolutions.jts.geom.Envelope;
 
 /**
  * Updates an {@link IndexInfo} with new metadata.

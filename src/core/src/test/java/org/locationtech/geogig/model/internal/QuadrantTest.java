@@ -20,11 +20,11 @@ import static org.locationtech.geogig.model.internal.Quadrant.SW;
 import org.geotools.geometry.jts.JTS;
 import org.junit.Test;
 import org.locationtech.geogig.model.Node;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryFactory;
 
 import com.google.common.collect.Lists;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryFactory;
 
 public class QuadrantTest {
 

@@ -17,6 +17,7 @@ import org.eclipse.jdt.annotation.Nullable;
 import org.locationtech.geogig.model.Node;
 import org.locationtech.geogig.model.ObjectId;
 import org.locationtech.geogig.model.RevTree;
+import org.locationtech.jts.geom.Envelope;
 
 import com.google.common.base.Charsets;
 import com.google.common.base.Preconditions;
@@ -24,7 +25,6 @@ import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Sets;
 import com.google.common.hash.Hasher;
-import com.vividsolutions.jts.geom.Envelope;
 
 public final class IndexInfo {
     public static enum IndexType {

@@ -23,6 +23,8 @@ import org.locationtech.geogig.model.impl.RevFeatureBuilder;
 import org.locationtech.geogig.repository.IndexInfo;
 import org.locationtech.geogig.storage.AutoCloseableIterator;
 import org.locationtech.geogig.test.integration.RepositoryTestCase;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.GeometryFactory;
 import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.feature.type.AttributeDescriptor;
@@ -30,8 +32,6 @@ import org.opengis.geometry.BoundingBox;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
 import com.google.common.collect.Lists;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.GeometryFactory;
 
 public class MaterializedIndexFeatureIteratorTest extends RepositoryTestCase {
 

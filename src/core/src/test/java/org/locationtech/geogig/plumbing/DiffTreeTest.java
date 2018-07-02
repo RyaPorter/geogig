@@ -46,6 +46,7 @@ import org.locationtech.geogig.storage.AutoCloseableIterator;
 import org.locationtech.geogig.storage.ObjectDatabase;
 import org.locationtech.geogig.test.MemoryModule;
 import org.locationtech.geogig.test.TestPlatform;
+import org.locationtech.jts.geom.Envelope;
 import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
@@ -53,7 +54,6 @@ import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterators;
 import com.google.inject.Guice;
 import com.google.inject.util.Modules;
-import com.vividsolutions.jts.geom.Envelope;
 
 /**
  *
