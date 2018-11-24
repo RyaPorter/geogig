@@ -28,6 +28,12 @@ public class Console {
 
     private static final char CARRIAGE_RETURN = '\r';
 
+    private static final String CLEAR_FROM_CURSOR_TO_END_OF_LINE = "\u001b[0K";
+
+    private static final String CLEAR_FROM_CURSOR_TO_START_OF_LINE = "\u001b[1K";
+
+    private static final String CLEAR_LINE = "\u001b[2K";
+
     private StringBuffer cursorBuffer;
 
     @SuppressWarnings("unused")
@@ -196,6 +202,7 @@ public class Console {
      */
     public void redrawLine() throws IOException {
         cursorBuffer.append(CARRIAGE_RETURN);
+        cursorBuffer.append(CLEAR_LINE);
         flush();
     }
 
