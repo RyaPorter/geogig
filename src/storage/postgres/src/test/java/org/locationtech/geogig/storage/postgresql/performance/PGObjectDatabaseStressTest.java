@@ -65,8 +65,6 @@ import com.google.common.collect.AbstractIterator;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Iterators;
 import com.google.common.collect.Lists;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.io.WKTReader;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class PGObjectDatabaseStressTest {
