@@ -35,10 +35,10 @@ public class FloatPackedCoordinateSequence extends PackedCoordinateSequence.Floa
        super(coords.toArray(new Coordinate[coords.size()]), dimensions);
     }
     public FloatPackedCoordinateSequence(final int dimensions, final int initialSize) {
-        super(initialSize,dimensions);
+        super(initialSize,dimensions,0);
     }
     public FloatPackedCoordinateSequence(int[][] serializedForm) {
-        super(deserializeCoords(serializedForm),serializedForm.length);
+        super(deserializeCoords(serializedForm),serializedForm.length,0);
     }
 
     public int[][] toSerializedForm() {
